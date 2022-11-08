@@ -1,0 +1,12 @@
+.my-sec{
+     
+    background-image: url('../image/8.jpeg');
+    height: 700px;
+    background-repeat: no-repeat; background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(242, 97, 7, 0.5); /*opacity:0.5;*/
+}
+.my-sec-inner{
+
+    color: white; font-size: 20px;
+}

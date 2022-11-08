@@ -1,0 +1,46 @@
+
+.success{
+    width:100%;
+    height:auto;
+    padding:5px;
+    border:2px solid green;
+    background-color:lightgreen;
+    color:green;
+    border-radius:5px;
+}
+
+.error{
+    width:100%;
+    height:auto;
+    padding:5px;
+    border:2px solid red;
+    background-color:pink;
+    color:red;
+    border-radius:5px;
+}
+.my-sec{
+     
+    background-image: url('../image/back.webp');
+    height: 320px;
+    background-repeat: no-repeat; background-size: cover;
+    background-attachment: fixed;
+}
+.my-sec-inner{
+    background-color: rgba(88, 211, 133, 0.5); /*opacity:0.5;*/
+    color: white; font-size: 20px;
+}
+.head{
+    
+    background-color: blue;  height: 50px; text-align: center;
+}
+.back{
+    background-image: url('../image/back.webp');
+    height: 650px; width:100% ;
+    background-repeat: no-repeat; background-size: cover;
+    background-attachment: fixed;
+}
+.inner{
+    background-color: rgba(35, 192, 43, 0.5); /*opacity:0.5;*/
+    color: white; font-size: 20px;
+
+}

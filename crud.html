@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background-color: bisque;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row my-2">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4">
+                <h6><span style="color: rgb(53, 232, 211);"> Care</span>Point<br>BEST DOCTOR</h6>
+            </div>
+            <div class="col-sm-2">
+                <h6 style="font-size: 13px ;"><i class="fa-solid fa-bolt"></i> Worktime:- 09:00-17:00 <br>
+                    sunday-stuerday-closed</h6>
+            </div>
+            <div class="col-sm-2">
+                <h6 style="font-size: 13px ;"><i class="fa-solid fa-envelope"></i> Mail us<br>xyz@gmail.com</h6>
+            </div>
+            <div class="col-sm-2">
+                <h6 style="font-size: 13px ;"><i class="fa-solid fa-phone"></i> Call us<br> +910000-000-000</h6>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <!--nav bar-->
+        <div class="row ">
+
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="crud.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:gotoPage('register','');">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:gotoPage('login','');">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:gotoPage('contact','');">contact</a>
+                                </li>
+                                <li class="nav-item" style="margin-left:500px; background-color: rgb(186, 55, 32);">
+                                    <a class="nav-link" href="javascript:gotoPage('Patient-Appointment','');">Patient
+                                        Appointment</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--image-->
+        <div class="row bg-light">
+            <div class="col-sm-5" style="text-align:center; margin-top: 100px;">
+                <h4>We have best medicare<br> plan option for you </h4>
+                <p class="card-text">With supporting Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    voluptatibus provident architecto praesentium rerum accusamus id, deleniti dolorem consequuntur?
+                    Fugiat laborum veritatis magni quaerat, tempore et numquam harum libero fuga. </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+
+            </div>
+            <div class="col-sm-7">
+                <img src="image/Female.png" alt="" width="100%" height="500px">
+            </div>
+        </div>
+        <!--testi-->
+
+        <div class="row">
+            <div class="col-sm-3" style="text-align:center; background-color: #43b1d2;">
+                <img src="image/medi.jpg" style="border-radius:50% ;  ;margin-top: 15px;" height="80px" width="80px">
+                <h4>Best tertment</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sequi provident dicta vitae porro
+                    rerum.F</p>
+            </div>
+            <div class="col-sm-3" style="text-align:center; background-color: #44b2cd;">
+                <img src="image/eme.png" style="border-radius:50% ;  ; margin-top: 15px;" height="80px" width="80px">
+                <h4>Emergency</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sequi provident dicta vitae porro
+                    rerum.F</p>
+            </div>
+            <div class="col-sm-3" style="text-align:center; background-color: #3abbbb;">
+                <img src="image/medicaltem (1).jpg" style="border-radius:50% ;  ; margin-top :15px;" height="80px"
+                    width="80px">
+                <h4>Best Doctor Team</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sequi provident dicta vitae porro
+                    rerum.F</p>
+            </div>
+            <div class="col-sm-3" style="text-align:center; background-color: #30c6a9;">
+                <img src="image/spe.jpg" style="border-radius:50% ;; margin-top: 15px;" height="80px" width="80px">
+                <h4>Any Help</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sequi provident dicta vitae porro
+                    rerum.F</p>
+            </div>
+        </div>
+        <!--why-->
+        <div class="row">
+            <div class="col-sm-12 pt-3" style="text-align:center ;">
+                <h2>Why Choose Us ?</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias omnis, voluptatum
+                    perspiciatis debitis,<br> nisi dolorum quod dolorem repellendus quasi excepturi natus maxime eveniet
+                    officia ex saepe inventore magnam ut?</p>
+            </div>
+        </div>
+        <!--info-->
+        <div class="row my-5">
+            <div class="col-sm-4 mt-4">
+
+
+                <h4> <i class="fa-sharp fa-solid fa-star-of-life"></i> Professinal</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, non numquam voluptas quidem
+                    distinctio, error delectus explicabo provident.</p>
+
+                <h4 style="margin-top:70px ;"> <i class="fa-sharp fa-solid fa-star-of-life"></i> Professinal</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, non numquam voluptas quidem
+                    distinctio, error delectus explicabo provident.</p>
+
+
+            </div>
+            <div class="col-sm-4">
+                <img src="image/do.png" width="100%" height="100%">
+            </div>
+            <div class="col-sm-4 mt-4">
+                <h4> <i class="fa-sharp fa-solid fa-star-of-life"></i> Professinal</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, non numquam voluptas quidem
+                    distinctio, error delectus explicabo provident.</p>
+
+                <h4 style="margin-top:70px; "><i class="fa-sharp fa-solid fa-star-of-life"></i> Professinal</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, non numquam voluptas quidem
+                    distinctio, error delectus explicabo provident.</p>
+            </div>
+        </div>
+        <!--back-->
+        <div class="container-fluid">
+            <div class="row my-sec">
+                <div class="col-sm-3 my-sec-inner">
+                    <h1 style="text-align: center; margin-top: 100px"><i class="fa-solid fa-face-smile"></i></h1>
+                    <h1 style=" text-align: center; border-bottom: 3px solid white;">1000+</h1>
+                    <h5 style="text-align: center;">Happy<br>Custmor</h5>
+                </div>
+                <div class="col-sm-3 my-sec-inner">
+                    <h1 style="margin-top: 100px; text-align: center"><i class="fa-solid fa-heart-pulse"></i></h1>
+                    <h1 style="text-align: center; border-bottom: 3px solid white;">2017</h1>
+                    <h5 style="margin-top: 0px ;  text-align: center;">Top<br>hospitalty</h5>
+                </div>
+                <div class="col-sm-3 my-sec-inner">
+                    <h1 style="margin-top: 100px; text-align: center"><i class="fa-solid fa-helicopter"></i></h1>
+                    <h1 style="text-align: center; border-bottom: 3px solid white;">1105</h1>
+                    <h5 style="text-align: center;">Innvotive<br>Approch</h5>
+                </div>
+                <div class="col-sm-3 my-sec-inner">
+                    <h1 style="margin-top: 100px; text-align: center"><i class="fa-solid fa-lungs"></i></h1>
+                    <h1 style="text-align: center; border-bottom: 3px solid white;">500+</h1>
+                    <h5 style="text-align: center;">Lungs<br>Replecment</h5>
+                </div>
+            </div>
+            <!--summary-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-7 my-5">
+                        <h3>How We Work</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maiores ullam repellat quas
+                            magnam
+                            consequuntur? Maiores qui tempore corporis! Quos ab veritatis atque odit nesciunt a autem
+                            minus
+                            ipsam praesentium!</p>
+                        <img src="image/1.webp" height="150px">
+                        <img src="image/2.webp" height="150px" style="margin-left: 50px;">
+                        <h5>Lorem Ipsum dolor sit</h5>
+                        <p style="margin-top:-10px ;"><span style="color: rgb(27, 202, 237) ;">Aprial19,2019 |
+                                Dr.skverma</span></p>
+                        <p style="margin-top: -5px;">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br>
+                            Laborum quae possimus<br> optio facere vitae
+                            sint.</p>
+                        <h5 style="margin-left:300px ; margin-top:-170px ;">Lorem Ipsum dolor sit</h5>
+                        <p style="margin-left:300px ; margin-top:-10px ;"><span
+                                style="color: rgb(27, 202, 237) ;">Aprial19,2019 | Dr.skverma</span></p>
+                        <p style="margin-left:300px ; margin-top:-5px ;">Lorem ipsum dolor sit amet<br> consectetur
+                            adipisicing elit.<br> Laborum quae possimus<br> optio facere vitae
+                            sint.</p>
+                        <button type="button" class="btn btn-primary"
+                            style="margin-left: 180px;margin-top:15px; ">Barnches
+                        </button>
+                    </div>
+                    <div class="col-sm-3 my-5">
+                        <h3>Our Creatvity</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam autem dolores
+                            inventore
+                            quo
+                            omnis voluptate quia mollitia ducimus amet quas rerum voluptates maxime nam, a error soluta.
+                            Reiciendis, atque.</p>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Heart tertment
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Molestias consequuntur quisquam, magnam totam iure omnis perspiciatis, tempora
+                                        similique sapiente nihil dicta. Animi voluptates a iure deserunt molestias
+                                        laborum
+                                        tempore ipsa.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Heart tertment
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Heart tertment
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div class="container-fluid">
+                    <div class="row back">
+                        <div class="col-sm-12 inner">
+                            <h1 style="margin-top:50px ;  text-align: center;">Gallery</h1>
+                            <p style=" text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatibus quam laborum repudiandae
+                                <br> corrupti itaque dolorem atque architecto.
+                            </p>
+                            <img src="image/1.webp" height="200px" width="300px" style="margin-left:100px; ">
+                            <img src="image/2.webp" height="200px" width="300px" style="margin-left:5px ;">
+                            <img src="image/3.webp" height="200px" width="300px" style="margin-left:5px ;"><br>
+                            <img src="image/4.webp" height="200px" width="300px"
+                                style="margin-left:100px ; margin-top:10px ;">
+                            <img src="image/5.webp" height="200px" width="300px"
+                                style="margin-left:5px ; margin-top:10px ;">
+                            <img src="image/doc.webp" height="200px" width="300px"
+                                style="margin-left:5px ; margin-top:10px ;">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-sm-12 mb-5">
+                        <h1 style="margin-top:50px ;  text-align: center;">Our Team</h1>
+                        <p style=" text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus quam laborum repudiandae
+                            <br> corrupti itaque dolorem atque architecto.
+                        </p>
+                        <img src="image/3.webp" height="150px" width="150px"
+                            style="border-radius: 50%; margin-left:210px ;">
+                        <img src="image/1.webp" height="150px" width="150px"
+                            style="border-radius: 50%; margin-left: 30px;">
+                        <img src="image/2.webp" height="150px" width="150px"
+                            style="border-radius: 50%; margin-left:30px ;">
+                        <img src="image/doc.webp" height="150px" width="150px"
+                            style="border-radius: 50%; margin-left: 30px ;"><br>
+                        <h6 style="margin-left:240px; margin-top: 20px;">Dr Ricey Deo</h6>
+                        <p style="margin-left:240px;">Assistant Surgen</p>
+                        <h6 style="margin-left:420px; margin-top: -70px;">Dr Ricey Deo</h6>
+                        <p style="margin-left:420px;">Assistant Surgen</p>
+                        <h6 style="margin-left:600px; margin-top: -70px;">Dr Ricey Deo</h6>
+                        <p style="margin-left:600px;">Assistant Surgen</p>
+                        <h6 style="margin-left:800px; margin-top: -70px;">Dr Ricey Deo</h6>
+                        <p style="margin-left:800px;">Assistant Surgen</p>
+                    </div>
+
+                </div>
+
+                <div class="row bg-dark">
+                    <div class="col-sm-3 my-5" style="color:white ;">
+                        <h5> Get in touch</h5><br>
+                        <h6> <i class="fa-solid fa-envelope"></i> doct@gmail.com</h6>
+                        <h6><i class="fa-solid fa-phone"></i> +91-0000-000-000</h6>
+                        <h6> <i class="fa-solid fa-location-dot"></i> 123 main road city <br>country 1235</h6>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="col-sm-3 my-5" style="color:white ;">
+                        <h5> Quick Links</h5><br>
+                        <h6><i class="fa-solid fa-link"></i> About us</h6>
+                        <h6><i class="fa-solid fa-link"></i> Blog</h6>
+                        <h6><i class="fa-solid fa-link"></i> Contact us</h6>
+                        <h6><i class="fa-solid fa-link"></i> Feq</h6>
+                        <h6><i class="fa-solid fa-link"></i> Insu</h6>
+                        <h6><i class="fa-solid fa-link"></i> About us</h6>
+                    </div>
+                    <div class="col-sm-3 my-5" style="color:white;">
+                        <h5>Our Service</h5><br>
+                        <h6><i class="fa-solid fa-link"></i> URISE</h6>
+                        <h6><i class="fa-solid fa-link"></i> BTEUP</h6>
+                        <h6><i class="fa-solid fa-link"></i> JEEUP</h6>
+                        <h6><i class="fa-solid fa-link"></i> Exam Result</h6>
+                        <h6><i class="fa-solid fa-link"></i> Students Login</h6>
+                    </div>
+                    <div class="col-sm-3 my-5" style="color:white ;">
+
+                        <h5>Enquiry Form</h5><br>
+                        <form>
+                            <input type="text" placeholder="Name" class="form-control">
+                            <input type="number" placeholder="Number" class="form-control"><br>
+                            <input type="text" placeholder="Massage" class="form-control"><br>
+                            <input type="submit" value="Submit" class="btn btn-danger">
+
+                        </form>
+                    </div>
+                </div>
+                <!--header-->
+                <div class="row head">
+                    <div class="col-sm-12 my-3">
+                        <h6 style="color: black;">copyright &copy; 2022-23 Designed and Developed by <span
+                                class="text-danger">Rahul Patel</span></h6>
+
+                    </div>
+
+
+                    <!--outer close-->
+                </div>
+</body>
+<script type="text/javascript" src="./js/config.js"></script>
+<script type="text/javascript" src="./js/function.js"></script>
+<script type="text/javascript" src="./js/session.js"></script>
+<script type="text/javascript" src="./js/state.js"></script>
+<script type="text/javascript" src="./js/crud.js"></script>
+
+</html>

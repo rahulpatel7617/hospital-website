@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatientAppointment</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/patient.css" rel="stylesheet" type="text/css">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/bootstrap.bundle.js"></script>
+
+
+    <style>
+        #main {
+            min-height: 400px;
+            width: 600px;
+            border: 3px solid black;
+            margin: 60px auto;
+            background-color: rgb(0, 0, 0, 0.5);
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row my-sec">
+            <div class="col-sm-12 my-sec-inner"></div>
+            <div class="row ">
+                <div class="col-sm-12">
+
+                    <nav class="navbar navbar-expand-lg ">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="crud.html"
+                                            style="background-color: black; color: white;">Home</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+
+            <!--form-->
+            <div id="main">
+                <h1 style="text-align: center; color: white;">Book your Appointment Here!</h1>
+                <hr>
+            <span id="alert" style="display:none;"></span>
+                <form method="post" onsubmit="patient_user(event);">
+                    <div class="row mb-4 my-5">
+                        <div class="col-sm-6">
+                            <h5>Name*</h5>
+                            <input type="text" placeholder="name" class="form-control" name="name" id="name">
+                        </div>
+                        <div class="col-sm-6">
+                            <h5>Number*</h5>
+                            <input type="text" placeholder="moblie" class="form-control" name="mobile" id="mobile">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5>Email*</h5>
+                            <input type="email" placeholder="Email" class="form-control" name="email" id="email">
+                        </div>
+                        <div class="col-sm-6">
+                            <h5>Appointment Date*</h5>
+                            <input type="date" placeholder="Appointment date" class="form-control" name="date"
+                                id="date">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5>Age*</h5>
+                            <input type="age" placeholder="Enter Your Age" class="form-control" name="age" id="age">
+
+                        </div>
+                        <div class="col-sm-6">
+                            <h5>Address*</h5>
+                            <input type="text" placeholder="Enter Your Address" class="form-control" name="address"
+                                id="address">
+                        </div>
+                    </div><br>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5>Gender*</h5>
+                            <input type="radio" name="gender" id="gender"><span
+                                style="color:black ; font-size: 20px;">Male</span>
+                            <input type="radio" name="gender" id="gender"><span
+                                style="color:black ; font-size: 20px;">Female</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5>Blood Gruop*</h5>
+                            <input type="radio" name="blood" id="blood"><span
+                                style="color:black ; font-size: 20px;">o-Negetive</span>
+                            <input type="radio" name="blood" id="blood"><span
+                                style="color:black ; font-size: 20px;">o+Positive</span>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <textarea class="form-control" placeholder="Type Your Problem" name="message"
+                                id="message"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="submit" value="Submit" class="btn btn-danger">
+
+                        </div>
+                    </div><br>
+            </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!--close-->
+
+
+
+</body>
+<script type="text/javascript" src="./js/config.js"></script>
+<script type="text/javascript" src="./js/function.js"></script>
+<script type="text/javascript" src="./js/session.js"></script>
+<script type="text/javascript" src="./js/state.js"></script>
+<script type="text/javascript" src="./js/crud.js"></script>
+
+</html>

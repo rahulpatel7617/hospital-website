@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/dashb.css" rel="stylesheet" type="text/css">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+
+
+
+    <style>
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row my-sec">
+            <div class="col-sm-12 my-sec-inner">
+                <!--nav-->
+                <div class="row ">
+                    <div class="col-sm-12">
+                        <nav class="navbar navbar-expand-lg bg-success">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="crud.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link"
+                                                href="javascript:gotoPage('logout','Do you really want to Logout');">Logout</a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <h1 style="text-align: center;"> Welcome to Dashboard </h1>
+                <hr>
+                <span id="alert" style="display:none;"></span>
+
+                <p id="myinfo"></p>
+                <div style="color: black;">
+                    <a href="javascript:gotoPage('myprofile','');">My Profile</a><br />
+                    <a href="javascript:gotoPage('change-password','');">Change Password</a><br />
+                    <a href="javascript:gotoPage('upload_pic','');">Upload Pic</a><br />
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script type="text/javascript" src="./js/config.js"></script>
+<script type="text/javascript" src="./js/function.js"></script>
+<script type="text/javascript" src="./js/session.js"></script>
+<script type="text/javascript" src="./js/state.js"></script>
+<script type="text/javascript" src="./js/crud.js"></script>
+
+</html>
